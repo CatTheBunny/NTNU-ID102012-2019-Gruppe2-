@@ -1,0 +1,85 @@
+/* Grid Setup*/
+html {
+  height: 100%;
+  background-image:url("images/Students.png");
+}
+
+body {
+  /*background-color: tomato;*/
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+/* Styling for images in navigation bar*/
+nav a p img {
+  max-width: 6rem;
+  /*max-height: 5rem;*/
+}
+ nav div p a img {
+   margin: 0;
+   margin-left: 4rem;
+   max-width: 14rem;
+   max-height: 10rem;
+ }
+
+#obs {
+  max-width: 6rem;
+  max-height: 2rem;
+}
+/* Styling for paragraphs in navigation bar*/
+nav a p {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+main {
+  justify-content: center;
+}
+
+/* #Students{
+  max-width: 100%;
+  min-width: 100%;
+} */
+
+h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: white;
+}
+
+footer hr {
+  margin: 0;
+}
+
+#iframeContainer {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+img#bunnprisHeaderImage {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+img#bunnprisHeaderImage:hover {
+  cursor: pointer;
+  background-color: rgba(235, 235, 235, 0.4);
+}
+
+iframe#bunnprisNettside {
+    width:920px;       /* set this to approximate width of entire page you're embedding */
+    height:370px;      /* determines where the bottom of the page cuts off */
+    margin-left:-40px; /* clipping left side of page */
+    margin-top:-60px;  /* clipping top of page */
+    overflow: hidden;
+    border: none;
+}
